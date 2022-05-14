@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header-container">
+            <div class="header"><h1>Library</h1></div>
+            <button data-modal-target="#modal" class="add-book-btn"><strong>+</strong> Add Book!</button>
+            <div class="modal" id="modal">
+                <button data-close-button class="close-button">&times;</button>
+                
+                <div class="modal-heading">Add Book</div>
+                    
+                
+                
+                <input type="text" name="Title" id="title" placeholder="Title" class="modal-title">
+                <input type="text" name="Author" id="author" placeholder="Author" class="modal-author">
+                <div>
+                    <label for="hasRead">Have you read this book?</label>
+                    <input type="checkbox" name="hasRead" id="hasRead">
+                </div>
+                
+                <button data-close-button="create-book" class="create-book">Add Book!</button>
+            </div>
+        </div>
+        <div class="library">
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+</body>
+</html>
